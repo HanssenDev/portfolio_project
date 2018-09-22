@@ -4,8 +4,12 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"auto\tmargin"
+			],
+			[
 				"margin",
-				"margin-top\tproperty"
+				"margin\tproperty"
 			],
 			[
 				"mari",
@@ -59,7 +63,16 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1351,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 222,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -178,15 +191,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								528,
+								528
 							]
 						],
 						"settings":
@@ -204,8 +217,37 @@
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 1,
+					"file": "style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -237,7 +279,7 @@
 		"cols":
 		[
 			0.0,
-			0.461581920904,
+			0.739548022599,
 			1.0
 		],
 		"rows":
