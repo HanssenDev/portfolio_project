@@ -1,8 +1,6 @@
 
 /*Global styles*/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:700');
-
 * {
 	margin: 0;
 	padding: 0;
@@ -10,21 +8,24 @@
 	outline: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+	box-sizing: border-box;
 
 }
 
 html {
-	font-family: lato, helvetica, sans-serif;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 300;
 }
 
 body {
 	width: 100%;
 	/*background: #6b75d6;*/
-	background: #f2eee2;
+	
 }
 
 .wrapper {
-	width: 90%;
+	max-width: 1140px;
 	margin: 0 auto;
 
 }
@@ -39,6 +40,10 @@ a {
 
 ul {
 	list-style: none;
+}
+
+h1, h2 {
+	font-weight: 300;
 }
 
 h1 {
@@ -56,7 +61,9 @@ img {
 	height: auto;
 }
 
-/*Nav styles*/
+
+
+/*---NAV STYLES---*/
 
 #navbar {
 	/*background: #6bd6cb;*/
@@ -87,7 +94,7 @@ nav a:hover {
 	color: #07ba9b;
 }
 
-/*Header styles*/
+/*---HEADER STYLES---*/
 
 header {
 	/*border: 2px solid orange;*/
@@ -98,7 +105,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/*background: #57bc90;*/
+	/* background: #57bc90; */
 	background-image: linear-gradient(to bottom right, #77c9d4, #57bc90, #015249);
 }
 
@@ -127,18 +134,28 @@ header p {
 }
 
 
-/*Project styles*/
+/*---PROJECT STYLES---*/
 
-#projects {
+.section-projects {
 	border: 2px solid orange;
 	margin: 100px auto;
 	background: #ff5992;
 }
 
-#projects h2 {
+.section-projects h2 {
 	text-align: center;
 	margin: 50px;
 }
+
+.section-projects div:last-child {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.section-projects a {
+	padding-bottom: 80px;
+}
+
 
 .project-tile {
 	text-align: center;
@@ -146,19 +163,18 @@ header p {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
-
-
 }
 
-.project-tile img {
+.section-projects img {
 	width: 100%;
+	height: auto;
 	border: 2px solid orange;
 
 }
 
 
 
-/*Contact styles*/
+/*---CONTACT STYLES---*/
 
 #contact {
 	border: 2px solid orange;
@@ -166,7 +182,7 @@ header p {
 }
 
 
-/*MEDIA QUERIES*/
+/*---MEDIA QUERIES---*/
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	h1 {

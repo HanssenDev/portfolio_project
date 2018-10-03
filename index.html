@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<style> /* Media Query placed in HTML to pass FCC test*/
 		@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -27,59 +28,64 @@
 	</style>
 </head>
 <body>
-	<div class="wrapper">
-		<nav id="navbar">
-				<a href="#welcome-section">Welcome</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>		
-		</nav>
+	<nav id="navbar">
+		<div class="wrapper">
+			<a href="#welcome-section">Welcome</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</div>			
+	</nav>
 			
-		<header id="welcome-section">
+	<header id="welcome-section">
+		<div class="wrapper">
 			<h1>Hanssen Ramanjooloo</h1>
 			<img src="img/me_opt.jpg" alt="image of me">
 			<p>Aspiring Front End Developer</p>
-			<div class="icons">
-				<a id="profile-link" href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-				<a id="profile-link" href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-				<a id="profile-link" href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>	
-			</div>
+		</div>
+		<div class="icons">
+			<a id="profile-link" href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+			<a id="profile-link" href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+			<a id="profile-link" href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>	
+		</div>
 
 
-		</header>			
+	</header>			
 			
-			<section id="projects">
-				<h2>Projects</h2>
-				<div class="project-tile">
-					<a href="../landing-page_project/index.html"><img src="img/oneplus.jpg" alt="oneplus project"></a>
-					<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
-					<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
-					<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
-					<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
-					<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
+	<section id="projects" class="section-projects">
+		<div class="wrapper">
+			<h2>Projects</h2>
+		</div>
+		<div class="wrapper">
+			<a href="../landing-page_project/index.html"><img src="img/oneplus.jpg" alt="oneplus project"></a>
+			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
+			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
+			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
+			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
+			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
 
 
 					
-				</div>
-			</section>
+		</div>
+	</section>
 				
-			<section id="contact">
-				<h2>Contact</h2>
-					<p>Send me a message!</p>
-					<a id="profile-link" href="https://github.com/HanssenDev" target="_blank">GitHub</a>
-					<a id="profile-link" href="https://www.freecodecamp.org/hanssen_dev" target="_blank">FreeCodeCamp</a>
-					<a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank">LinkedIn</a>
+	<section id="contact" class="wrapper">
+		<h2>Contact</h2>
+			<p>Send me a message!</p>
+			<a id="profile-link" href="https://github.com/HanssenDev" target="_blank">GitHub</a>
+			<a id="profile-link" href="https://www.freecodecamp.org/hanssen_dev" target="_blank">FreeCodeCamp</a>
+			<a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank">LinkedIn</a>
 					
-			</section>
+	</section>
 
-		<footer id="footer">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</footer>
+	<footer id="footer">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</footer>
 
-	</div>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	
+
 </body>
 </html>
