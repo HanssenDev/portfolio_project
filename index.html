@@ -7,46 +7,31 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<style> /* Media Query placed in HTML to pass FCC test*/
-		@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-	h1 {
-		font-size: 2rem;
-		
-	}
-
-	nav {
-		display: flex;
-		justify-content: space-evenly;
-	}
-
-	nav a {
-		padding: 0;
-		margin: 0;
-	}
-
-}
-	</style>
+	
 </head>
-<body>
-	<nav id="navbar">
-		<div class="wrapper">
-			<a href="#welcome-section">Welcome</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
-		</div>			
-	</nav>
-			
+<body>		
 	<header id="welcome-section">
-		<div class="wrapper">
-			<h1>Hanssen Ramanjooloo</h1>
+        <nav id="navbar" class="main-nav">
+            <div class="wrapper">
+                <a href="#welcome-section">Welcome</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>			
+        </nav>
+		<div class="welcome-box">
 			<img src="img/me_opt.jpg" alt="image of me">
-			<p>Aspiring Front End Developer</p>
+			<div class="welcome-info">
+                <h1>Hanssen Ramanjooloo</h1>		
+                <p>&nbsp;Aspiring Front End Developer</p>
+                <div class="icons">
+                    <a id="profile-link" href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a id="profile-link" href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a id="profile-link" href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>	
+                </div>
+                <a href="#" class="btn btn-full">Resume</a>
+		    </div>
 		</div>
-		<div class="icons">
-			<a id="profile-link" href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-			<a id="profile-link" href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-			<a id="profile-link" href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>	
-		</div>
+		
 
 
 	</header>			
@@ -56,8 +41,8 @@
 			<h2>Projects</h2>
 		</div>
 		<div class="wrapper">
-			<a href="../landing-page_project/index.html"><img src="img/oneplus.jpg" alt="oneplus project"></a>
-			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
+			<a href="../landing-page_project/index.html"><img src="img/oneplus.jpg" alt="OnePlus project"></a>
+			<a href="../Omnifood_project/index.html"><img src="img/omnifood.jpg" alt="Omnifood project"></a>
 			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
 			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
 			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
@@ -68,13 +53,16 @@
 		</div>
 	</section>
 				
-	<section id="contact" class="wrapper">
-		<h2>Contact</h2>
-			<p>Send me a message!</p>
+	<section id="contact" class="section-contact">
+		<div class="wrapper">
+            <h2>Contact</h2>
+            <p>Send me a message!</p>
+        </div>
+        <div class="wrapper">
 			<a id="profile-link" href="https://github.com/HanssenDev" target="_blank">GitHub</a>
 			<a id="profile-link" href="https://www.freecodecamp.org/hanssen_dev" target="_blank">FreeCodeCamp</a>
 			<a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank">LinkedIn</a>
-					
+		</div>			
 	</section>
 
 	<footer id="footer">
