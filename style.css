@@ -59,6 +59,10 @@ h2:after {
     margin: 20px auto;  
 }
 
+p {
+    font-weight: 300;
+}
+
 img {
 	max-width: 100%;
 	display: block;
@@ -80,14 +84,20 @@ section {
 
 }
 
-.main-nav a {
+.main-nav a:link, 
+.main-nav a:visited {
 	display: inline-block;
-	padding: 0 2em;
+	padding: 4px 0;
+    margin-left: 40px;
 	font-size: 1.15em;
+    border-bottom: 2px solid transparent;
+    transition: color 0.4s, border-bottom 0.4s;
 }
 
-.main-nav a:hover {
-	color: #07ba9b;
+.main-nav a:hover,
+.main-nav a:active {
+	color: #0cc4cb;
+    border-bottom: 2px solid #0cc4cb;
 }
 
 /*---HEADER STYLES---*/
@@ -161,21 +171,30 @@ header p {
 .btn:link,
 .btn:visited {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 12px 25px;
     border-radius: 200px;
     transition: background-color 0.2s;
 }
 
 .btn-full:link,
 .btn-full:visited {
-    border: 1px solid #19a9ea);
-    background-color: #19a9ea;
+    border: 1px solid #0cc4cb);
+    background-color: #0cc4cb;
+    transition: background-color 0.2s;
 }
 
 .btn-full:hover,
 .btn-full:active {
-    background-color: rgb(5, 80, 155);
+    background-color: #06868b;
     
+}
+
+.welcome-info span {
+    margin-right: 15px;
+}
+
+.welcome-info div:last-child a {
+    margin-right: 20px;
 }
 
 
@@ -214,9 +233,54 @@ header p {
 
 /*---CONTACT STYLES---*/
 
-#contact {
+.section-contact {
 	background: #f5f5f5;
 }
+
+
+.section-contact p {
+    color: #04cdd4;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 110%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 50%;
+    margin: 4px auto;
+    padding: 10px;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+textarea {
+  height: 160px;   
+}
+
+.submit {
+    padding: 10px 20px;
+    width: 100px;
+    margin: 15px auto;
+    border-radius: 200px;
+    background-color: #04cdd4;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+.submit:hover {
+    background-color: #07a9af;
+    cursor: pointer;
+}
+
+/*---FOOTER STYLES---*/
+
 
 
 /*---MEDIA QUERIES---*/
