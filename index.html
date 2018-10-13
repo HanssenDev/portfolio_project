@@ -24,9 +24,9 @@
                 <h1>Hanssen Ramanjooloo</h1>		
                 <p>&nbsp;Aspiring Front-end Developer</p>
                 <div class="icons">
-                    <a id="profile-link" href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                    <a id="profile-link" href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <a id="profile-link" href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>	
+                    <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>	
                 </div>
                 <div>
                     <a href="#projects" class="btn btn-full"><span>View my work</span><i class="fas fa-arrow-down"></i></a>
@@ -44,43 +44,69 @@
 			<h2>Projects</h2>
 		</div>
 		<div class="wrapper">
-			<a href="../landing-page_project/index.html"><img src="img/oneplus.jpg" alt="OnePlus project"></a>
-			<a href="../Omnifood_project/index.html"><img src="img/omnifood.jpg" alt="Omnifood project"></a>
+			<div>
+			    <a href="../landing-page_project/index.html"><img src="img/oneplus.jpg" alt="OnePlus project"></a>
+			</div>
+			<div>
+			    <a href="../Omnifood_project/index.html"><img src="img/omnifood.jpg" alt="Omnifood project"></a>
+			</div>
 			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
-			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
-			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
-			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
-
-
-					
+			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>			
 		</div>
 	</section>
 				
 	<section id="contact" class="section-contact">
-		<div class="wrapper">
+		<div class="wrapper" id="form">
             <h2>Contact</h2>
-            <p>Send me a message!</p>
-            <form>
-                <input placeholder="Name" type="text" name="name" required>
-                <input placeholder="Enter email" type="email" name="email" required>
-                <textarea placeholder="Your message" name="message"></textarea>
-                <input class="submit" type="submit">
+            <p>Have a question or want to work together?<br>Get in touch!</p>
+        </div>
+        <div class="wrapper">
+             <form action="mailer.php">
+<!-- PHP Form
+               <?php
+                 if($_GET['success'] == 1) {
+                     echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
+                 }
+                 if($_GET['success'] == -1) {
+                     echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again!</div>";
+                 }                                            
+                ?>
+-->
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input placeholder="Name" type="text" name="name" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input placeholder="Enter your email" type="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-pen icon" style="padding-top: 60px"></i>
+                    <textarea placeholder="Your message" name="message"></textarea>
+                </div>                         
+                <div>
+                    <input class="submit" type="submit">
+                </div>
             </form>
         </div>
+        
         		
 	</section>
 
-	<footer id="footer" class="wrapper">
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-		<div class="wrapper">
-			<a id="profile-link" href="https://github.com/HanssenDev" target="_blank">GitHub</a>
-			<a id="profile-link" href="https://www.freecodecamp.org/hanssen_dev" target="_blank">FreeCodeCamp</a>
-			<a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank">LinkedIn</a>
+	<footer id="footer">
+	    <div class="wrapper">
+            <a href="#top" class="back-to-top">
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+	    </div>
+		<div class="wrapper">	   
+			<a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+			<a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>          
 		</div>	
+		<div>
+		    <p>Hanssen Ramanjooloo &copy;</p>
+		</div>
 	</footer>
 
 	

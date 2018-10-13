@@ -40,6 +40,8 @@ ul {
 h1 {
 	font-weight: 300;
     font-size: 3rem;
+    letter-spacing: 1px;
+    word-spacing: 4px;
 }
 
 
@@ -48,6 +50,7 @@ h2 {
 	text-align: center;
     color: #444649;
     margin-bottom: 60px;
+    letter-spacing: 1px;
 }
 
 h2:after {
@@ -147,7 +150,7 @@ header p {
 
 .fa-github:hover,
 .fa-github:active {
-    color: #6a06b2;
+    color: #a53bf2;
 }
 
 .fa-linkedin:hover,
@@ -178,15 +181,15 @@ header p {
 
 .btn-full:link,
 .btn-full:visited {
-    border: 1px solid #0cc4cb);
+    border: 1px solid #0cc4cb;
     background-color: #0cc4cb;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, border 0.2s;
 }
 
 .btn-full:hover,
 .btn-full:active {
     background-color: #06868b;
-    
+    border: 1px solid #06868b;
 }
 
 .welcome-info span {
@@ -200,21 +203,18 @@ header p {
 
 /*---PROJECT STYLES---*/
 
-.section-projects {
-	
-}
-
 
 .section-projects div:last-child {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, 1fr);
 }
 
-.section-projects a {
-	padding-bottom: 80px;
+.section-projects div {
+	margin-bottom: 80px;
 }
 
 
+/*
 .project-tile {
 	text-align: center;
 	width: 100%;
@@ -222,11 +222,12 @@ header p {
 	grid-template-columns: 1fr 1fr;
 
 }
+*/
 
 .section-projects img {
 	width: 100%;
 	height: auto;
-	border: 2px solid orange;
+/*	border: 2px solid orange;*/
 }
 
 
@@ -244,30 +245,62 @@ header p {
     text-align: center;
     margin-bottom: 30px;
     font-size: 110%;
+    line-height: 40px;
 }
 
-form {
+
+
+form div{
     display: flex;
     flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input-container i {
+    background: #04cdd4;
+    color: #fff;
+    position: absolute;
+    left: 25%;
+    top: 5px;
+    padding: 9px 8px;
+    border-radius: 4px 0 0 4px;
+    transition: 0.3s;
+
+}
+
+.fa-pen {
+    min-height: 95%;
+}
+
+
+form div:first-child i {
+    padding: 9px 9.4px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 50%;
-    margin: 4px auto;
-    padding: 10px;
+    margin: 4px 0;
+    padding: 8px 8px 8px 45px;
     font-family: 'Lato', Helvetica, sans-serif;
 }
 
 textarea {
-  height: 160px;   
+    height: 160px;
+    resize: none;     
 }
 
 .submit {
     padding: 10px 20px;
     width: 100px;
-    margin: 15px auto;
+    margin: 25px auto 50px;
     border-radius: 200px;
     background-color: #04cdd4;
     color: #fff;
@@ -279,9 +312,71 @@ textarea {
     cursor: pointer;
 }
 
+
+.form-messages {
+    width: 40%;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border-radius: 3px;
+    color: #333;
+}
+
+.success {
+    background-color: rgba(38, 191, 68, 0.8);
+    
+}
+
+
+.error {
+    background-color: rgba(209, 46, 46, 0.8)
+}
+
 /*---FOOTER STYLES---*/
 
+footer {
+    background-color: #252934;
+    padding: 60px 0;
+    position: relative;
+}
 
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+.back-to-top {
+    position: absolute;
+    display: inline-block;
+    top: -20px;
+    font-size: 180%;
+    background-color: #04cdd4;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.back-to-top:hover {
+    background-color: #07a9af;
+}
+
+footer div:not(:first-child) a {
+    margin: 10px 15px;
+    border: 2px solid #262F38;
+    padding: 8px ;
+    background-color: #262F38;
+}
+
+footer div:last-child {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer p {
+    color: #7c7c7c;
+    text-transform: uppercase;
+    font-size: 80%;
+}
 
 /*---MEDIA QUERIES---*/
 
