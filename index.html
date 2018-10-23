@@ -4,29 +4,33 @@
 	<title>My Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+	<link rel="stylesheet" href="resources/style.css">
+	<link rel="stylesheet" href="resources/queries.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	
 </head>
-<body>		
+<body>
+<!--------------------HEADER-------------------->		
 	<header id="welcome-section">
-        <nav id="navbar" class="main-nav">
-            <div class="wrapper">
+        <nav id="navbar">
+            <div class="wrapper main-nav">
                 <a href="#welcome-section">Welcome</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>			
         </nav>
 		<div class="welcome-box">
-			<img src="img/me_opt.jpg" alt="image of me">
+			<img src="img/photo_3.jpg" alt="image of me">
 			<div class="welcome-info">
                 <h1>Hanssen Ramanjooloo</h1>		
-                <p>&nbsp;Aspiring Front-end Developer</p>
+                <p>Self-taught Front-end Developer</p>
                 <div class="icons">
                     <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                     <a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <a href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>	
+                    <a href="https://www.freecodecamp.org/hanssen_dev" target="_blank" title="FreeCodeCamp"><i class="fab fa-free-code-camp fa-2x"></i></a>	
                 </div>
                 <div>
                     <a href="#projects" class="btn btn-full"><span>View my work</span><i class="fas fa-arrow-down"></i></a>
@@ -34,27 +38,60 @@
                 </div>
 		    </div>
 		</div>
-		
-
 
 	</header>			
-			
+
+<!--------------------PROJECTS-------------------->
+
 	<section id="projects" class="section-projects">
 		<div class="wrapper">
 			<h2>Projects</h2>
 		</div>
-		<div class="wrapper">
-			<div>
-			    <a href="../landing-page_project/index.html"><img src="img/oneplus.jpg" alt="OnePlus project"></a>
+		<div class="projects">
+			<div class="card">
+                <div class="img-wrapper">
+                    <a href="../landing-page_project/index.html" target="_blank">
+                        <img src="img/oneplus.jpg" alt="OnePlus project">
+                    </a>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HanssenDev" target="_blank" ><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-wrapper">
+                    <a href="../Omnifood_project/index.html" target="_blank">
+                        <img src="img/omnifood.jpg" alt="Omnifood project">
+                    </a>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </div>
 			</div>
-			<div>
-			    <a href="../Omnifood_project/index.html"><img src="img/omnifood.jpg" alt="Omnifood project"></a>
-			</div>
-			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>
-			<a href="#"><img src="http://placeimg.com/640/360/any" alt="#"></a>			
+            <div class="card">
+                <div class="img-wrapper">
+                    <a href="#" target="_blank">
+                        <img src="http://placeimg.com/640/380/any" alt="#">
+                    </a>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-wrapper">
+                    <a href="#" target="_blank">
+                        <img src="http://placeimg.com/640/360/any" alt="#">
+                    </a>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>				
 		</div>
 	</section>
-				
+
+<!--------------------CONTACT-------------------->				
 	<section id="contact" class="section-contact">
 		<div class="wrapper" id="form">
             <h2>Contact</h2>
@@ -93,6 +130,7 @@
         		
 	</section>
 
+<!--------------------FOOTER-------------------->
 	<footer id="footer">
 	    <div class="wrapper">
             <a href="#top" class="back-to-top">
@@ -110,6 +148,10 @@
 	</footer>
 
 	
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="vendors/js/html5shiv.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

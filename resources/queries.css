@@ -1,0 +1,144 @@
+/*---MEDIA QUERIES---*/
+
+/*Big tablets to 1340px (widths smaller than the 1140px row)*/
+
+@media only screen and (max-width: 1340px) {
+    .welcome-box {
+        position: relative;
+        left: 5%;
+        top: 8%;
+        width: 100%;
+    }
+    
+    .welcome-info {
+        text-align: center;
+        margin: 60px 60px 0 0;
+        padding-left: 1%;
+    }
+    
+    .main-nav {
+        width: 80%;
+    }
+    
+    .welcome-box img {
+        margin: 40px auto 40px 20px;
+    }
+       
+}
+
+
+/*Small tablets to big tablets: from 768 to 1023px*/
+
+@media only screen and (max-width: 1023px) {    
+    .welcome-box img {
+       display: none;
+    }
+    
+    .welcome-box {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        right: 0;
+        width: 100%;
+    }
+}
+
+
+/* from 541 to 767px */
+
+@media only screen and (max-width: 767px) {
+    .main-nav {
+        display: none;
+    }
+    
+    .welcome-box {
+       top: 20%;;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 60%;
+    }
+    
+    .input-container i {
+        left: 15%;
+    }
+    
+}
+
+
+/*Small phones to small tablets: from 481 to 540px*/
+
+@media only screen and (max-width: 540px) {
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 80%;
+    }
+    
+    .input-container i {
+        left: 10%;
+    }
+    
+     .img-wrapper {
+        width: 100%;
+    }
+    
+    .card {
+        width: 100%;
+    }
+   
+}
+
+
+/*Small phones: from 0 to 480px*/
+
+@media only screen and (max-width: 480px) {    
+
+    body {
+        overflow-x:hidden;
+        width: 100%;
+    }
+    
+    h2 {
+        margin-top: 20px;
+    }
+        
+    .welcome-box {
+        left: 0;
+    }
+     
+    .welcome-info {
+        text-align: center; 
+        margin: 20px auto;
+        width: 100%;
+    }
+    
+    .welcome-info div:last-child {
+        margin-top: 80px;
+    }
+    
+    .welcome-info div:last-child a {
+        margin: 16px;
+    }
+    .welcome-info div:last-child a:first-child {
+        font-size: 100%;
+    }
+    
+    .projects {
+        margin-bottom: 20px;
+    }
+    
+    .card {
+        margin-bottom: 10px;
+        padding: 35px;
+        width: 100%;
+    }
+    
+    .img-wrapper {
+        height: 250px;
+    }
+
+}
