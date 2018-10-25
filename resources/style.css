@@ -39,9 +39,10 @@ ul {
 
 h1 {
 	font-weight: 400;
-    font-size: 3rem;
-    letter-spacing: 1px;
+    font-size: 2.7rem;
+    letter-spacing: 2px;
     word-spacing: 4px;
+    text-transform: uppercase;
 }
 
 
@@ -80,19 +81,22 @@ section {
 
 /*---NAV STYLES---*/
 
+
+/*Main navi*/
+
 .main-nav {
 	width: 100%;
-    padding-top: 80px;
+    padding-top: 70px;
     text-align: right;
-
 }
 
 .main-nav a:link, 
 .main-nav a:visited {
 	display: inline-block;
-	padding: 4px 0;
-    margin-left: 40px;
-	font-size: 1.15em;
+	padding: 8px 0;
+    margin-left: 20px;
+	font-size: 1em;
+    text-transform: uppercase;
     border-bottom: 2px solid transparent;
     transition: color 0.4s, border-bottom 0.4s;
 }
@@ -103,21 +107,63 @@ section {
     border-bottom: 2px solid #0cc4cb;
 }
 
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Sticky navi*/
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);  
+    box-shadow: 0 3px 2px #efefef;
+    z-index: 1;
+}
+
+.sticky .logo {
+    margin: 10px;
+    height: 70px;
+}
+
+.sticky .main-nav {
+    padding: 15px 0 0 0;
+
+}
+
+.sticky .main-nav a:link, 
+.sticky .main-nav a:visited {
+	padding: 20px 0;
+    color: #444649;
+}
+
 /*---HEADER STYLES---*/
 
 
 header {
 	height: 100vh;	
-	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/coding_bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/coding_bg3.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-header div img {
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 40px 40px 40px 0;
+}
+
+.my-pic {
 	border-radius: 50%;
-	border: 1px solid black;
-	margin: 40px auto 40px auto;
+	border: 1.5px solid black;
+	margin: 0 auto;
+    height: 400px;
 }
 
 header p {
@@ -126,17 +172,15 @@ header p {
 }
 
 .welcome-box {
-    position: absolute;
-    left: 17%;
-    top: 24%;
-    width: 1140px;
-    display: grid;
-    grid-template-columns: 300px 1fr;
+    display: flex;
+    flex-direction: row;
+    margin: 160px auto;
+    padding-left: 1%;
 }
 
 .welcome-info {
     text-align: center;
-    margin: 60px 0 0 0;
+    padding-right: 1%;
     padding-left: 1%;
 }
 
@@ -356,7 +400,6 @@ textarea {
     
 }
 
-
 .error {
     background-color: rgba(209, 46, 46, 0.8)
 }
@@ -390,7 +433,7 @@ footer div {
     background-color: #f2297c;
 }
 
-footer div:not(:first-child) a {
+footer div:nth-child(2) a {
     margin: 10px 15px;
     border: 2px solid #262F38;
     padding: 8px ;
@@ -399,13 +442,20 @@ footer div:not(:first-child) a {
 
 footer div:last-child {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 footer p {
-    color: #7c7c7c;
+    color: #aca4a4;
     text-transform: uppercase;
     font-size: 80%;
 }
 
+.credit {
+    color: #aca4a4;
+    transition: color 0.2s;
+}
 
+.credit:hover {
+    color: #eee;
+}
