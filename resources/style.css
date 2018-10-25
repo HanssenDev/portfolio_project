@@ -150,7 +150,7 @@ section {
 
 header {
 	height: 100vh;	
-	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/coding_bg3.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)), url(../img/coding_bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -462,4 +462,31 @@ footer p {
 
 .credit:hover {
     color: #eee;
+}
+
+
+/*---ANIMATIONS---*/
+
+
+.js--nav,
+.js--wp-1,
+.js--project-1,
+.js--project-2,
+.js--project-3,
+.js--project-4 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    animation-duration: 2s;
+}
+
+.js--nav.animated,
+.js--wp-1.animated,
+.js--project-1.animated,
+.js--project-2.animated,
+.js--project-3.animated,
+.js--project-4.animated {
+    opacity: 1;
 }

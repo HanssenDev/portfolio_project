@@ -14,10 +14,10 @@
 </head>
 <body>
 <!--------------------HEADER-------------------->		
-	<header id="welcome-section">
-       <div class="nav-wrapper">
-            <nav id="navbar" class="clearfix">
-               <div class="wrapper">
+	<header id="welcome-section" class="js--section-welcome">
+       <div class="nav-wrapper clearfix">
+            <nav id="navbar" class="clearfix js--nav">
+               <div class="wrapper clearfix">
                     <img src="img/hr-logo.png" alt="logo" class="logo clearfix">          
                     <div class="main-nav clearfix">
                         <a href="#welcome-section">Welcome</a>
@@ -28,8 +28,8 @@
             </nav>
         </div>
 		<div class="welcome-box wrapper clearfix">
-			<img src="img/photo_3.jpg" alt="image of me" class="my-pic">
-			<div class="welcome-info">
+			<img src="img/photo_3.jpg" alt="image of me" class="my-pic js--wp-1">
+			<div class="welcome-info js--wp-info">
                 <h1>Hanssen Ramanjooloo</h1>		
                 <p>Junior Front-end Developer</p>
                 <div class="icons">
@@ -38,7 +38,7 @@
                     <a href="https://www.freecodecamp.org/hanssen_dev" target="_blank" title="FreeCodeCamp"><i class="fab fa-free-code-camp fa-2x"></i></a>	
                 </div>
                 <div>
-                    <a href="#projects" class="btn btn-full"><span>View my work</span><i class="fas fa-arrow-down"></i></a>
+                    <a href="#" class="btn btn-full js--scroll-to-projects"><span>View my work</span><i class="fas fa-arrow-down"></i></a>
                     <a href="#" class="btn btn-full">Resume</a>
                 </div>
 		    </div>
@@ -53,7 +53,7 @@
 			<h2>Projects</h2>
 		</div>
 		<div class="projects">
-			<div class="card">
+			<div class="card js--project-1">
                 <div class="img-wrapper">
                     <a href="../landing-page_project/index.html" target="_blank">
                         <img src="img/oneplus.jpg" alt="OnePlus project">
@@ -63,7 +63,7 @@
                     <a href="https://github.com/HanssenDev" target="_blank" ><i class="fab fa-github fa-2x"></i></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card js--project-2">
                 <div class="img-wrapper">
                     <a href="../Omnifood_project/index.html" target="_blank">
                         <img src="img/omnifood.jpg" alt="Omnifood project">
@@ -73,7 +73,7 @@
                     <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                 </div>
 			</div>
-            <div class="card">
+            <div class="card js--project-3">
                 <div class="img-wrapper">
                     <a href="#" target="_blank">
                         <img src="http://placeimg.com/640/380/any" alt="#">
@@ -83,7 +83,7 @@
                     <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card js--project-4">
                 <div class="img-wrapper">
                     <a href="#" target="_blank">
                         <img src="http://placeimg.com/640/360/any" alt="#">
@@ -138,14 +138,14 @@
 <!--------------------FOOTER-------------------->
 	<footer id="footer">
 	    <div class="wrapper">
-            <a href="#top" class="back-to-top">
+            <a href="#welcome-section" class="back-to-top js--scroll-to-welcome">
                 <i class="fas fa-angle-double-up"></i>
             </a>
 	    </div>
 		<div class="wrapper">	   
-			<a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-			<a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>          
+			<a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x js--wp-4"></i></a>
+			<a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x js--wp-4"></i></a>
+            <a href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x js--wp-4"></i></a>          
 		</div>	
 		<div>
 		    <p>Hanssen Ramanjooloo &copy; <br><br><a href="https://my.logomakr.com" target="_blank"><span class="credit">Created my free logo at LogoMakr.com</span></a></p>
