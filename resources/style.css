@@ -84,9 +84,13 @@ section {
 
 /*Main navi*/
 
+.nav-wrapper {
+    height: 80px;
+}
+
 .main-nav {
 	width: 100%;
-    padding-top: 70px;
+    padding-top: 50px;
     text-align: right;
 }
 
@@ -156,7 +160,7 @@ header {
     height: 100px;
     width: auto;
     float: left;
-    margin: 40px 40px 40px 0;
+    margin: 20px 40px 40px 0;
 }
 
 .my-pic {
@@ -174,7 +178,7 @@ header p {
 .welcome-box {
     display: flex;
     flex-direction: row;
-    margin: 160px auto;
+    margin: 200px auto 160px auto;
     padding-left: 1%;
 }
 
