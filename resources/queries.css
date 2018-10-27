@@ -2,13 +2,10 @@
 
 /*Big tablets to 1340px (widths smaller than the 1140px row)*/
 
-@media only screen and (max-width: 1340px) {    
-    .main-nav {
-        width: 90%;
-    }
-    
+@media only screen and (max-width: 1340px) {        
     .welcome-box {
-        margin: 80px 20px;
+/*        margin: 80px 20px;*/
+        margin: 100px auto 160px auto;
     }
     
     h1 {
@@ -37,6 +34,48 @@
 @media only screen and (max-width: 767px) {
     .main-nav {
         display: none;
+        position: absolute;
+        margin: 25px 0 0;
+        left: 190px;
+      
+    }
+    
+    .main-nav a:link,
+    .main-nav a:visited {
+        display: block;
+        border: 0;
+        padding: 12px 0;
+        font-size: 90%;
+    }
+    
+    .logo {
+        height: 90px;
+    }
+    
+    .sticky .logo {
+        height: 90px;
+    }
+    
+    .sticky {
+        padding-bottom: 25px;
+    }
+    
+    .sticky .main-nav {
+        padding-top: 0;
+    }
+    
+    .sticky .main-nav a:link, 
+    .sticky .main-nav a:visited {
+        padding: 12px 0;
+
+}
+    
+    .mobile-nav-icon {
+        display: inline-block;
+        position: relative;
+        right: 30px;
+        top: 30px;
+        
     }
     
     h1 {
