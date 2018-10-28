@@ -187,7 +187,7 @@ header {
 
 .my-pic {
 	border-radius: 50%;
-	border: 1.5px solid black;
+	border: 1px solid black;
 	margin: 0 auto;
     height: 400px;
 }
@@ -267,6 +267,14 @@ header p {
 
 .welcome-info span {
     margin-right: 15px;
+}
+
+.welcome-info div:last-of-type i {
+    transition: transform 0.3s;
+}
+
+.welcome-info div:last-of-type a:hover .fas {
+    transform: rotate(90deg);
 }
 
 .welcome-info div:last-child a:not(:last-child) {
