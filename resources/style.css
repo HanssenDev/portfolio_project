@@ -8,6 +8,7 @@
 	outline: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 
 }
@@ -106,6 +107,7 @@ header nav {
 	font-size: 1em;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
+    -webkit-transition: color 0.4s, border-bottom 0.4s;
     transition: color 0.4s, border-bottom 0.4s;
 }
 
@@ -129,6 +131,7 @@ header nav {
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.98);  
+    -webkit-box-shadow: 0 3px 2px #efefef;  
     box-shadow: 0 3px 2px #efefef;
     z-index: 1;
 }
@@ -172,7 +175,8 @@ header nav {
 
 header {
 	height: 100vh;	
-	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)), url(../img/coding_bg.jpg);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.8))), url(../img/coding_bg-min.jpg);	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)), url(../img/coding_bg-min.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -198,7 +202,12 @@ header p {
 }
 
 .welcome-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     margin: 180px auto 160px auto;
     padding-left: 1%;
@@ -221,24 +230,28 @@ header p {
 .fa-github:hover,
 .fa-github:active {
     color: #a53bf2;
+    -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
 
 .fa-linkedin:hover,
 .fa-linkedin:active {
     color: #007bb5;
+    -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
 
 .fa-free-code-camp:hover,
 .fa-free-code-camp:active {
     color: rgb(9, 221, 9);
+    -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
 
 .fa-github,
 .fa-linkedin,
 .fa-free-code-camp {
+    -webkit-transition: color 0.2s, 200ms;
     transition: color 0.2s, 200ms;
 }
 
@@ -249,6 +262,7 @@ header p {
     display: inline-block;
     padding: 12px 25px;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
 }
 
@@ -256,6 +270,7 @@ header p {
 .btn-full:visited {
     border: 1px solid #0cc4cb;
     background-color: #0cc4cb;
+    -webkit-transition: background-color 0.2s, border 0.2s;
     transition: background-color 0.2s, border 0.2s;
 }
 
@@ -270,10 +285,14 @@ header p {
 }
 
 .welcome-info div:last-of-type i {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .welcome-info div:last-of-type a:hover .fas {
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
@@ -295,8 +314,14 @@ header p {
 
 
 .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 60px;
     max-width: 1100px;
@@ -316,6 +341,7 @@ header p {
     padding: 10px;
     text-align: center;
     border-radius: 5px;
+    -webkit-box-shadow: 0 3px 5px #efefef;
     box-shadow: 0 3px 5px #efefef;
 }
 
@@ -333,12 +359,17 @@ header p {
 	width: auto;
 	height: 100%;
     opacity: .85;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
 }
 
 .projects img:hover {
     opacity: 1;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 
 }
@@ -362,14 +393,26 @@ header p {
 
 
 form div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .input-container {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -381,6 +424,7 @@ form div{
     top: 5px;
     padding: 9px 8px;
     border-radius: 4px 0 0 4px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 
 }
@@ -415,6 +459,7 @@ textarea {
     border-radius: 200px;
     background-color: #04cdd4;
     color: #fff;
+    -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
 }
 
@@ -450,7 +495,11 @@ footer {
 }
 
 footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -463,6 +512,7 @@ footer div {
     color: #fff;
     padding: 5px 10px;
     cursor: pointer;
+    -webkit-transition: background-color .4s;
     transition: background-color .4s;
 }
 
@@ -490,6 +540,7 @@ footer p {
 
 .credit {
     color: #aca4a4;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -508,10 +559,12 @@ footer p {
 .js--project-3,
 .js--project-4 {
     opacity: 0;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 
 .js--wp-4 {
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
