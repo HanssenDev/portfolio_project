@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128499978-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128499978-1');
+    </script>
+    <meta name="description" content="The portfolio website for Hanssen Ramanjooloo.">
+	<title>My Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+	<link rel="stylesheet" href="resources/style.css">
+	<link rel="stylesheet" href="resources/queries.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<!--------------------HEADER-------------------->		
+	<header id="welcome-section" class="js--section-welcome">
+       <div class="nav-wrapper clearfix">
+            <nav id="navbar" class="clearfix js--nav">
+               <div class="wrapper clearfix">
+                    <img src="img/hr-logo.png" alt="logo" class="logo clearfix">          
+                    <div class="main-nav js--main-nav clearfix">
+                        <a href="#welcome-section">Welcome</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="clearfix">
+                        <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars"></i></a>
+                    </div>
+               </div>			
+            </nav>
+        </div>
+		<div class="welcome-box wrapper clearfix">
+			<img src="img/photo_3.jpg" alt="image of me" class="my-pic js--wp-1">
+			<div class="welcome-info js--wp-info">
+                <h1>Hanssen Ramanjooloo</h1>		
+                <p>Junior Front-end Developer</p>
+                <div class="icons">
+                    <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.freecodecamp.org/hanssen_dev" target="_blank" title="FreeCodeCamp"><i class="fab fa-free-code-camp fa-2x"></i></a>	
+                </div>
+                <div>
+                    <a href="#" class="btn btn-full js--scroll-to-projects"><span>View my work</span><i class="fas fa-arrow-right"></i></a>
+                    <a href="Hanssen's%20Resume.pdf" class="btn btn-full" target="_blank">Resume</a>
+                </div>
+		    </div>
+		</div>
+
+	</header>			
+
+<!--------------------PROJECTS-------------------->
+
+	<section id="projects" class="section-projects js--section-projects">
+		<div class="wrapper">
+			<h2>Projects</h2>
+		</div>
+		<div class="projects">
+			<div class="card js--project-1">
+                <div class="img-wrapper">
+                    <a href="../Simon-memory-game/index.html" target="_blank">
+                        <img src="img/simon-project.jpg" alt="Simon memory game project">
+                    </a>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HanssenDev" target="_blank" ><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="card js--project-2">
+                <div class="img-wrapper">
+                    <a href="../Omnifood_project/index.html" target="_blank">
+                        <img src="img/omnifood.jpg" alt="Omnifood project">
+                    </a>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+			</div>
+            <div class="card js--project-3">
+                <div class="img-wrapper">
+                    <a href="#" target="_blank">
+                        <img src="http://placeimg.com/640/380/any" alt="#">
+                    </a>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="card js--project-4">
+                <div class="img-wrapper">
+                    <a href="#" target="_blank">
+                        <img src="http://placeimg.com/640/360/any" alt="#">
+                    </a>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>				
+		</div>
+	</section>
+
+<!--------------------CONTACT-------------------->				
+	<section id="contact" class="section-contact">
+		<div class="wrapper" id="form">
+            <h2>Contact</h2>
+            <p>Have a question or want to work together?<br>Get in touch!</p>
+        </div>
+        <div class="wrapper">
+             <form action="mailer.php" method="post">
+              
+               <?php
+                 if($_GET['success'] == 1) {
+                     echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
+                 }
+                 if($_GET['success'] == -1) {
+                     echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again!</div>";
+                 }                                            
+                ?>
+
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input placeholder="Name" type="text" name="name" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input placeholder="Enter your email" type="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-pen icon" style="padding-top: 60px"></i>
+                    <textarea placeholder="Your message" name="message"></textarea>
+                </div>                         
+                <div>
+                    <input class="submit" type="submit">
+                </div>
+            </form>
+        </div>
+        
+        		
+	</section>
+
+<!--------------------FOOTER-------------------->
+	<footer id="footer">
+	    <div class="wrapper">
+            <a href="#welcome-section" class="back-to-top js--scroll-to-welcome">
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+	    </div>
+		<div class="wrapper">	   
+			<a href="https://github.com/HanssenDev" target="_blank"><i class="fab fa-github fa-2x js--wp-4"></i></a>
+			<a href="https://linkedin.com/in/hanssen-ramanjooloo" target="_blank"><i class="fab fa-linkedin fa-2x js--wp-4"></i></a>
+            <a href="https://www.freecodecamp.org/hanssen_dev" target="_blank"><i class="fab fa-free-code-camp fa-2x js--wp-4"></i></a>          
+		</div>	
+		<div>
+		    <p>Hanssen Ramanjooloo &copy; <br><br><a href="https://my.logomakr.com" target="_blank"><span class="credit">Created my free logo at LogoMakr.com</span></a></p>
+		</div>
+	</footer>
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="vendors/js/html5shiv.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="resources/script.js"></script>
+</body>
+</html>
